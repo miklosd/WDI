@@ -15,7 +15,7 @@ yearIndex = []
 for i in range(1960,2018):
     yearIndex.append(str(i))
 
-dfData = df = pd.read_csv('https://raw.githubusercontent.com/miklosd/WDI/master/data/WDIData.csv', delimiter=',')
+dfData = df = pd.read_csv('https://raw.githubusercontent.com/miklosd/WDI/master/data/WDIData_subset.csv', delimiter=',')
 
 dfResult = pd.DataFrame(index = yearIndex, columns = ['Year'])
 dfResult['Year'] = yearIndex
